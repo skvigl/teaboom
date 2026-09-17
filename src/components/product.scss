@@ -1,0 +1,145 @@
+@use "../styles/breakpoints" as *;
+@use "../styles/mixins" as *;
+
+.product {
+  padding: 16px;
+
+  @include md {
+    padding: 32px;
+  }
+
+  &__title {
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  &__subtitle {
+    color: #444;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  &__main {
+    margin-top: 40px;
+
+    @include md {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    @include lg {
+      gap: 60px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 375px;
+
+    @include md {
+      max-width: 420px;
+    }
+  }
+
+  &__pack {
+    margin-top: 20px;
+
+    @include md {
+      margin-top: 0;
+    }
+  }
+
+  &__pack-ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  &__pack-btn {
+    padding: 8px;
+    background-color: #f6f7f8;
+    border: solid 1px #f0f0f0;
+    transition:
+      color 0.3s,
+      background-color 0.3s;
+
+    &.active {
+      background-color: #e8eaed;
+      border-color: #ccc;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #e8eaed;
+    }
+  }
+
+  &__pack-article {
+    font-size: 14px;
+  }
+
+  &__pack-prices {
+    margin-top: 4px;
+  }
+
+  &__pack-orig {
+    color: gray;
+    font-size: 20px;
+    text-decoration: line-through;
+  }
+
+  &__pack-sale {
+    color: red;
+    font-size: 26px;
+    font-weight: 500;
+    margin-left: 4px;
+  }
+
+  &__pack-info {
+    margin-top: 20px;
+  }
+
+  &__add-to-cart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #e9f2c3;
+    color: #444;
+    font-size: 20px;
+    font-weight: 500;
+    transition:
+      color 0.3s,
+      background-color 0.3s;
+
+    &:hover,
+    &:focus {
+      background: #222;
+      color: white;
+    }
+  }
+
+  &__about {
+    margin-top: 32px;
+    padding: 20px;
+    background-color: #fefcef;
+
+    @include md {
+      margin-top: 40px;
+      padding: 40px;
+    }
+  }
+
+  &__about-title {
+    font-size: 28px;
+  }
+
+  &__about-richtext {
+    margin-top: 20px;
+    max-width: 700px;
+  }
+}

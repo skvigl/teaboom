@@ -1,0 +1,52 @@
+// типографика, цвета, отступы конечно нужно в переменных
+
+body {
+  margin: 0;
+  color: #202020;
+  background-color: #fbfbfb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.25;
+}
+
+p {
+  line-height: 1.5;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  color: #202020;
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
